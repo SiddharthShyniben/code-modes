@@ -74,7 +74,7 @@ You need [VSCode](https://code.visualstudio.com/) installed.
 ### Installation
 
 1. Open the **extension** sidebar panel in VSCode
-2. Search for Code Modes. (Be sure to find the right one!)
+2. Search for `code-modes`. (Be sure to find the right one!)
 3. Click install to install it.
 
 OR
