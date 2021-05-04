@@ -1,6 +1,6 @@
 <!--
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** repo_name, project_title
+*** code-modes, Code Modes
 ***
 *** Replacing does not fix everything. Please read through the following sections: 
 *** 1. How Do I Submit A (Good) Bug Report?
@@ -11,15 +11,13 @@
 *** 6. Pull Requests
 -->
 
-<!-- TODO Add testing, environment details -->
-
-# Contributing to repo_name
+# Contributing to code-modes
 
 <!-- Not an avid fan of emojis, but still -->
 
 **:heart: :heart: First off, thanks for taking the time to contribute! :heart: :heart:**
 
-The following is a set of guidelines for contributing to project_title on GitHub. **These are mostly guidelines, not rules**. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to Code Modes on GitHub. **These are mostly guidelines, not rules**. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -48,7 +46,7 @@ The following is a set of guidelines for contributing to project_title on GitHub
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [project_title Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to siddharth.muscat@gmail.com.
+This project and everyone participating in it is governed by the [Code Modes Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to siddharth.muscat@gmail.com.
 
 ## I don't want to read this whole thing, I just have a question!!!
 
@@ -62,7 +60,7 @@ If you want to ask a question, simply use the [Question template][question-templ
 
 ### Reporting bugs
 
-This section guides you through submitting a bug report for project_title. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
+This section guides you through submitting a bug report for Code Modes. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template][bug-report-url], the information it asks for helps us resolve issues faster.
 
@@ -71,7 +69,6 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 #### Before Submitting A Bug Report
 
 - First of all, test with the latest update release to see if the issue persists. Frequently, a bug report submitted for an older release is first suggested to test with the available latest update release or even an available latest Early Access release. 
-- Make sure that all your own code is logical and proper. Use your instincts. Maybe a proofread by someone else may help.
 - **Perform a search on GitHub and Google** to see if this has happened before. If it has, add a comment to the existing issue instead of opening a new one.
 
 
@@ -83,29 +80,30 @@ Bugs are tracked as [GitHub issues][issues-guide] Create an issue on the reposit
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
 - **Use a clear and descriptive title** for the issue to identify the problem. Title it `"[Bug]: Title here"`.
-- **Describe the exact steps which reproduce the problem** in as many details as possible. For example, start by explaining how you loaded the project, which CDN you used, etc. When listing steps, don't just say what you did, but explain how you did it. For example, if you moved the cursor to the end of a line, explain if you used the mouse, or a keyboard shortcut, and if so which one?
-- **Provide specific examples** to demonstrate the steps. Include links to files or GitHub projects, or copy/paste-able snippets, which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks][md-code-block].
+- **Describe the exact steps which reproduce the problem** in as many details as possible. For example, start by explaining how you opened vscode, how you installed the extension, etc. When listing steps, don't just say what you did, but explain how you did it. For example, if you changed the mode, explain if you used the command palette, or the status bar icon, and if so which one?
+- **Provide specific examples** to demonstrate the steps. 
 - **Describe the behavior** you observed after following the steps and point out **what exactly is the problem** with that behavior.
 - **Explain which behavior you expected** to see instead and why.
-- **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, record the GIF with a keybinding visualizer like [Keycastr][keycastr] **(There is also a quick hack for doing this in macos – Simply turn on Sticky keys)**. You can use [this tool][licecap] to record GIFs on macOS and Windows, and [this tool][silentcast] on Linux.
+- **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, record the GIF with a keybinding visualizer like [Keycastr][keycastr]. You can use [this tool][licecap] to record GIFs on macOS and Windows, and [this tool][silentcast] on Linux.
 - If the problem wasn't triggered by a specific action, **describe what you were doing before the problem happened** and share more information using the guidelines below.
 
 Provide more context by answering these questions:
 
-- **Did the problem start happening recently** (e.g. after updating to a new version of project_title) or was this always a problem?
-  - If the problem started happening recently, **can you reproduce the problem in an older version of project_title?** What's the most recent version in which the problem doesn't happen? <!-- You can download older versions of project_title from... npm? -->
+- **Did the problem start happening recently** (e.g. after updating to a new version of Code Modes) or was this always a problem?
+  - If the problem started happening recently, **can you reproduce the problem in an older version of Code Modes?** What's the most recent version in which the problem doesn't happen? You can download older versions of Code Modes by clicking the gear icon near the extensions from the extension sidebar
 - **Can you reliably reproduce the issue? If not, provide details about how often the problem happens and under which conditions it normally happens**.
 
 Include details about your configuration and environment:
 
-- **Which version** of project_title are you using? <!-- You can get the exact version of project_title by looking at the package.json -->
-<!-- - What's the **name and version of the OS** you're using? -->
+- **Which version** of Code Modes are you using? You can get the exact version of Code Modes by opening the extension page.
+- What's the **name and version of the OS** you're using?
+- What's the **version of VSCode** you're using?
 
 
 
 ## Suggesting enhancements
 
-This section guides you through submitting an enhancement suggestion for project_title, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for Code Modes, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 Before creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion) as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion). Fill in [the template][enhancement-url], including the steps that you imagine you would take if the feature you're requesting existed.
 
@@ -113,7 +111,7 @@ Before creating enhancement suggestions, please check [this list](#before-submit
 
 #### Before Submitting An Enhancement Suggestion
 
-* **Check if you're using the latest version of project_title** <!-- URL to Github Release or npm package? --> and if you can get the desired behavior by changing project_title's options/settings.
+* **Check if you're using the latest version of Code Modes** and if you can get the desired behavior by changing Code Modes' options/settings. You can view the latest version from the [releases page][releases-url]
 <!-- * **Check if there's already a plugin which provides that enhancement.** -->
 * **Perform a search on GitHub and Google** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 
@@ -128,22 +126,22 @@ Enhancement suggestions are tracked as [GitHub issues][issues-guide]. Create an 
 - **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
 - **Provide specific examples to demonstrate the steps**. Include copy/paste-able snippets which you use in those examples, as [Markdown code blocks][md-code-block].
 - **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
-- **Include screenshots and animated GIFs** which help you demonstrate the steps or point out the part of project_title which the suggestion is related to. If you use the keyboard while following the steps, record the GIF with a keybinding visualizer like [Keycastr][keycastr] **(There is also a quick hack for doing this in macos – Simply turn on Sticky keys)**. You can use [this tool][licecap] to record GIFs on macOS and Windows, and [this tool][silentcast] on Linux.
-- **Explain why this enhancement would be useful** to most project_title users. <!-- and isn't something that can or should be implemented as a community package. -->
+- **Include screenshots and animated GIFs** which help you demonstrate the steps or point out the part of Code Modes which the suggestion is related to. If you use the keyboard while following the steps, record the GIF with a keybinding visualizer like [Keycastr][keycastr] **(There is also a quick hack for doing this in macos – Simply turn on Sticky keys)**. You can use [this tool][licecap] to record GIFs on macOS and Windows, and [this tool][silentcast] on Linux.
+- **Explain why this enhancement would be useful** to most Code Modes users. <!-- and isn't something that can or should be implemented as a community package. -->
 - List some other projects where this enhancement exists.
-- **Specify which version** of project_title you are using. <!-- You can get the exact version of project_title by looking at the package.json -->
+- **Specify which version** of Code Modes you are using. <!-- You can get the exact version of Code Modes by looking at the package.json -->
 
 
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to project_title? You can start by looking through the [issues][issues-url].
+Unsure where to begin contributing to Code Modes? You can start by looking through the [issues][issues-url].
 
 
 
 #### Local development
 
-project_title <!-- and all it's plugins blah blah --> can be developed locally. Just fork and clone this repo, <!-- install all dependencies,  -->and code away! 
+Code Modes <!-- and all it's plugins blah blah --> can be developed locally. Just fork and clone this repo, <!-- install all dependencies,  -->and code away! 
 
 
 
@@ -151,10 +149,10 @@ project_title <!-- and all it's plugins blah blah --> can be developed locally. 
 
 The process described here has several goals:
 
-- Maintain project_title's quality
+- Maintain Code Modes's quality
 - Fix problems that are important to users
-- Engage the community in working toward the best possible project_title
-- Enable a sustainable system for project_title's maintainers to review contributions
+- Engage the community in working toward the best possible Code Modes
+- Enable a sustainable system for Code Modes's maintainers to review contributions
 
 Please follow these steps to have your contribution considered by the maintainers:
 
@@ -203,13 +201,14 @@ This was almost completely taken from the [atom contributing guide][atom-contrib
 
 
 <!-- MARKDOWN LINKS -->
-[bug-report-url]: https://github.com/SiddharthShyniben/repo_name/issues/new?assignees=SiddharthShyniben&labels=bug&template=bug_report.md&title=%5BBug%5D%3A+Describe+your+bug
+[bug-report-url]: https://github.com/SiddharthShyniben/code-modes/issues/new?assignees=SiddharthShyniben&labels=bug&template=bug_report.md&title=%5BBug%5D%3A+Describe+your+bug
 [atom-contributing]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
-[question-template]: https://github.com/SiddharthShyniben/repo_name/issues/new?template=question.md
+[question-template]: https://github.com/SiddharthShyniben/code-modes/issues/new?template=question.md
 [issues-guide]: https://guides.github.com/features/issues/
 [keycastr]: https://github.com/keycastr/keycastr
 [md-code-block]: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#quoting-code
 [licecap]: https://www.cockos.com/licecap/
 [silentcast]: https://github.com/colinkeenan/silentcast
-[issues-url]: https://github.com/SiddharthShyniben/repo_name/issues
-[enhancement-url]: https://github.com/SiddharthShyniben/repo_name/issues/new?assignees=SiddharthShyniben&labels=enhancement&template=feature_request.md&title=%5BFeature%5D%3A+Describe+your+feature
+[issues-url]: https://github.com/SiddharthShyniben/code-modes/issues
+[enhancement-url]: https://github.com/SiddharthShyniben/code-modes/issues/new?assignees=SiddharthShyniben&labels=enhancement&template=feature_request.md&title=%5BFeature%5D%3A+Describe+your+feature
+[releases-url]: https://github.com/SiddharthShyniben/code-modes/releases

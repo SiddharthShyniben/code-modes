@@ -31,11 +31,13 @@ const codeModes: Mode[] = [
 		"**/package.json": true,
 		"**/package-lock.json": true,
 		"**/.git*": true,
-		"**/.*rc*": true,
+		"**/.browserslistrc": true,
+		"**/.editorconfig": true,
 		"**/tslint.json": true,
+		"**/tsconfig*.json": true,
 		"**/angular.json": true,
-		"**/*spec*": true,
-		"**/*conf*": true
+		"**/*.spec.*": true,
+		"**/*.conf.*": true
 	}),
 	new Mode("Everything", "View everything so you can take in the whole scale of your project", {
 		"**/.git": false,
@@ -45,7 +47,17 @@ const codeModes: Mode[] = [
 		"**/.DS_Store": false,
 		"**/Thumbs.db": false,
 		"node_modules": false
-	})
+	}),
+	new Mode("Documentation", "Update documentation", {
+		"**/.*": true,
+		"**/*.html": true,
+		"**/*.css": true,
+		"**/*.scss": true,
+		"**/*.sass": true,
+		"**/*.less": true,
+		"**/*.js": true,
+		"**/*.ts": true,
+	}),
 ];
 
 let statusBarItem: vscode.StatusBarItem;
@@ -56,9 +68,13 @@ function changeCodeModeSettings(modeName: string | vscode.QuickPickItem): void {
 	modeName = typeof modeName === "string" ? modeName : modeName.label;
 	const modeToChangeTo = codeModes.find(mode => mode.label == modeName);
 
-	if (!modeToChangeTo) return;
+	if (!modeToChangeTo) {
+		console.log("Mode not found")
+		return;
+	}
 
 	// UI changes
+	console.log("Switched to " + modeName + " mode")
 	vscode.window.showInformationMessage("Switched to " + modeName + " mode");
 	currentMode = modeName;
 	statusBarItem.text = "Current mode: " + modeName;
@@ -69,18 +85,18 @@ function changeCodeModeSettings(modeName: string | vscode.QuickPickItem): void {
 }
 
 // this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
+// this extension is activated on startup
 export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	// console.log(JSON.stringify(get("exclude")))
-	console.log('Congratulations, your extension "code-modes" is now active!');
+	console.log('Code modes starting...');
 
 	// Create status bar icon displaying current mode
 	statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
 	statusBarItem.command = 'code-modes.changeMode';
 	statusBarItem.text = "Current mode: " + currentMode;
+	console.log( "Current mode: " + currentMode)
 	statusBarItem.show();
 
 	context.subscriptions.push(statusBarItem);
@@ -90,6 +106,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('code-modes.changeMode', () => {
 		// The code you place here will be executed every time your command is executed
+		console.log("Change mode command ran")
 
 		// Ask the user which mode to set to
 		const response = vscode.window.showQuickPick(codeModes.filter(mode => mode.label !== currentMode), { placeHolder: "Choose which mode you want" })

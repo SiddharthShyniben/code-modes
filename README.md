@@ -45,12 +45,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#documentation">Documentation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -83,19 +81,11 @@ You need [VSCode](https://code.visualstudio.com/) installed.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This extension exposes a command and a status bar item
 
-_For more examples, please refer to the [Documentation](#documentation)_
+Use the command `Code Modes: Change mode` to change the current code mode.
 
-<!-- TODO fill this -->
-
-<!-- DOCUMENTATION -->
-
-## Documentation
-
-Use this space to describe the project, linking to the [installation](#installation), the [usage](#usage), and the documentation if it's on another page (wiki and stuff)
-
-<!-- TODO fill this -->
+You can also click on the status bar item (`Current Mode: <current mode>`) to do the same.
 
 <!-- ROADMAP -->
 
@@ -117,13 +107,11 @@ Contributions are what make the open source community such an amazing place to b
 
 For more info, see [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
-[![Stargazers repo roster for @SiddharthShyniben/code-modes; Thank you!!](https://reporoster.com/stars/SiddharthShyniben/code-modes)](https://github.com/SiddharthShyniben/code-modes/stargazers)
-
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the GNU General Public License v3.0. See [`LICENSE`](./LICENSE) for more information.
+Distributed under the **GNU General Public License v3.0**. See [`LICENSE`](./LICENSE) for more information.
 
 <!-- CONTACT -->
 
@@ -132,15 +120,6 @@ Distributed under the GNU General Public License v3.0. See [`LICENSE`](./LICENSE
 Siddharth Shyniben - siddharth.muscat@gmail.com
 
 Project Link: [https://github.com/SiddharthShyniben/code-modes](https://github.com/SiddharthShyniben/code-modes)
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
--   [Me for the idea]()
--   [My laptop for letting me code]()
--   [Tim Berners-Lee for creating the internet]()
-<!-- TODO fill this -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
