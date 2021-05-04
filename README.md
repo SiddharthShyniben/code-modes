@@ -76,7 +76,12 @@ You need [VSCode](https://code.visualstudio.com/) installed.
 1. Open the **extension** sidebar panel in VSCode
 2. Search for Code Modes. (Be sure to find the right one!)
 3. Click install to install it.
-4. Enjoy!
+
+OR
+
+1. Clone this repo
+2. `cd` ([`fcd`](https://github.com/SiddharthShyniben/fcd)?) into it
+3. run `code --install-extension code-modes-1.0.0.vsix`
 
 <!-- USAGE EXAMPLES -->
 ## Usage
