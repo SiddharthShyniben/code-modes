@@ -1,8 +1,12 @@
 {
 	"name": "code-modes",
 	"displayName": "code-modes",
+	"author": "SiddharthShyniben",
+	"publisher": "SiddharthShyniben",
+	"license": "GPL-3.0",
 	"description": "Change your file tree based on what mode you are in!",
-	"version": "0.0.1",
+	"repository": "https://github.com/SiddharthShyniben/code-modes",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -42,5 +46,6 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
-	}
+	},
+	"icon": "images/logo.png"
 }

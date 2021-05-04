@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/SiddharthShyniben/code-modes">
     <!-- TODO Insert logo if applicable -->
-    <img src="images/logo.svg" alt="(ツ)" height="80">
+    <img src="images/logo.png" alt="(ツ)" height="80">
   </a>
 
   <h3 align="center">Code Modes (for VSCode)</h3>
